@@ -26,7 +26,7 @@ public class FileUtility {
  */
 	public String readDataFromPropertyFile(String key) throws IOException
 	{
-		FileInputStream fis=new FileInputStream(".\\sample\\src\\test\\resources\\CommonData.properties");
+		FileInputStream fis=new FileInputStream(".\\git\\repository3\\AutomationFramework.A10\\src\\test\\resources\\CommonData.properties");
 		Properties p=new Properties();
 		p.load(fis);
 		
@@ -47,7 +47,7 @@ public class FileUtility {
 	public String readDataFromExcelFile(String sheetName,int rowNo,int cellNo) throws FileNotFoundException, EncryptedDocumentException, IOException
 	{
 
-		FileInputStream fise=new FileInputStream(".\\sample\\src\\test\\resources\\TestData.xlsx");
+		FileInputStream fise=new FileInputStream(".\\git\\repository3\\AutomationFramework.A10\\src\\test\\resources\\TestData.xlsx");
 		Workbook wb =WorkbookFactory.create(fise);
 		String value=wb.getSheet(sheetName).getRow(rowNo).getCell(cellNo).getStringCellValue();		
 		return value;
