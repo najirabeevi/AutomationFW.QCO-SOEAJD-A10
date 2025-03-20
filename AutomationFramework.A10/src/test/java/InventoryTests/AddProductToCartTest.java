@@ -27,7 +27,7 @@ public class AddProductToCartTest extends BaseClass{
 	InventoryPage ip=new InventoryPage(driver);
 	String ProductToBeAdded = ip.clickOnProduct(driver, PRODUCTNAME);
 	
-	//Assert.fail();
+	Assert.fail();
 	
 	//Addproduct in Cart
 	
